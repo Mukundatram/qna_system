@@ -11,7 +11,7 @@ warnings.filterwarnings('ignore', category=FutureWarning)
 
 # Configure Gemini using Streamlit Secrets
 genai.configure(api_key=st.secrets["google_api_key"])
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # Initialize sentence-transformers with smaller model for deployment
 embedding_model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
