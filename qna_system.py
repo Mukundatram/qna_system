@@ -11,7 +11,7 @@ load_dotenv()
 
 # configure Gemini
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-2.0-Flash')
 
 # Initialize sentence-transformers for embeddings (since Gemini doesn't have an embeddings API)
 embedding_model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
